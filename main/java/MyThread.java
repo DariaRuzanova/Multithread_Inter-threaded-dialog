@@ -4,12 +4,12 @@ public class MyThread extends Thread{
         try {
             while (!isInterrupted()){
                 Thread.sleep(2500);
-                System.out.println("Я поток "+Thread.currentThread().getName()+" Всем привет!");
+                System.out.println("РЇ РїРѕС‚РѕРє "+Thread.currentThread().getName()+" Р’СЃРµРј РїСЂРёРІРµС‚!");
             }
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         } finally{
-            System.out.printf("Поток %s завершен\n", Thread.currentThread().getName());
+            System.out.printf("РџРѕС‚РѕРє %s Р·Р°РІРµСЂС€РµРЅ\n", Thread.currentThread().getName());
         }
     }
 }

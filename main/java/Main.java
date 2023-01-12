@@ -9,12 +9,12 @@ public class Main {
         final Thread thread3 = new Thread(mainGroup,myThread);
         final Thread thread4 = new Thread(group1,myThread);
 
-        System.out.println(" \n Создаю потоки : \n");
+        System.out.println(" \n РЎРѕР·РґР°СЋ РїРѕС‚РѕРєРё : \n");
 
-        thread1.setName("Первый");
-        thread2.setName("Второй");
-        thread3.setName("Третий");
-        thread4.setName("Второстепенный");
+        thread1.setName("РџРµСЂРІС‹Р№");
+        thread2.setName("Р’С‚РѕСЂРѕР№");
+        thread3.setName("РўСЂРµС‚РёР№");
+        thread4.setName("Р’С‚РѕСЂРѕСЃС‚РµРїРµРЅРЅС‹Р№");
 
         thread1.start();
         thread2.start();
@@ -22,7 +22,7 @@ public class Main {
         thread4.start();
 
         Thread.sleep(7000);
-        System.out.println(" \nЗавершаю потоки : ");
+        System.out.println(" \nР—Р°РІРµСЂС€Р°СЋ РїРѕС‚РѕРєРё : ");
         mainGroup.interrupt();
 
     }
